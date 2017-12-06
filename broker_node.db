@@ -1,0 +1,164 @@
+-- MySQL dump 10.13  Distrib 5.5.54, for debian-linux-gnu (x86_64)
+--
+-- Host: localhost    Database: broker_node
+-- ------------------------------------------------------
+-- Server version	5.5.54-0ubuntu0.14.04.1
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `merchants`
+--
+
+DROP TABLE IF EXISTS `merchants`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `merchants` (
+  `id_shop` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) COLLATE utf8_slovak_ci NOT NULL,
+  `uuid` varchar(36) COLLATE utf8_slovak_ci NOT NULL,
+  `modofication_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `is_active` binary(1) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id_shop`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_slovak_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `merchants`
+--
+
+LOCK TABLES `merchants` WRITE;
+/*!40000 ALTER TABLE `merchants` DISABLE KEYS */;
+INSERT INTO `merchants` VALUES (1,'Tesco','12343497-ea3c-47d8-99a8-0857c45129a1','2017-10-19 15:23:21','1'),(2,'Škoda','63878r97-ea3c-47d8-99a8-0857cv1129a1','2017-10-19 15:23:21','1'),(3,'Lidl','rt123456-ea3c-47d8-99a8-0857cv1129a1','2017-10-19 15:23:21','1');
+/*!40000 ALTER TABLE `merchants` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `orders`
+--
+
+DROP TABLE IF EXISTS `orders`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `orders` (
+  `id_order` int(11) NOT NULL AUTO_INCREMENT,
+  `uuid` varchar(40) COLLATE utf8_slovak_ci NOT NULL,
+  `username` varchar(45) COLLATE utf8_slovak_ci NOT NULL,
+  `mail` varchar(100) COLLATE utf8_slovak_ci DEFAULT NULL,
+  `timestamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `success` int(11) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id_order`)
+) ENGINE=InnoDB AUTO_INCREMENT=198 DEFAULT CHARSET=utf8 COLLATE=utf8_slovak_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `orders`
+--
+
+LOCK TABLES `orders` WRITE;
+/*!40000 ALTER TABLE `orders` DISABLE KEYS */;
+INSERT INTO `orders` VALUES (39,'81956651-0078-4ceb-a4e6-d9d53347311b','marek2','jozko.mrkvicka@gmail.com','2017-04-25 21:43:42',0),(40,'82e8966a-d452-4545-805b-42d6c6b0bdbf','marek2','jozko.mrkvicka@gmail.com','2017-04-25 22:27:28',0),(41,'5cdb49f3-0a93-45a3-ab40-a5641353758c','marek2','jozko.mrkvicka@gmail.com','2017-04-25 22:41:38',0),(42,'fd1f2092-e1ee-491e-8d7e-188f62997841','marek2','jozko.mrkvicka@gmail.com','2017-04-25 23:23:24',0),(43,'76e7bb63-8b4c-4622-9726-44728ca67583','nestel201','a@a.sk','2017-05-01 05:23:53',0),(44,'f5ae6022-25c5-41ff-9067-27adde8c8229','nestel200','a@a.sk','2017-05-02 04:40:27',0),(45,'a1be3159-f2c4-4064-8c70-60935a0fabaf','nestel200','a@a.sk','2017-05-02 04:41:48',0),(46,'91211588-ae51-4c9a-8e85-d7e3d27ebffc','nestel200','a@a.sk','2017-05-02 04:44:35',0),(47,'85899c71-152f-4f28-8709-790ba5210c6c','nestel205','a@a.sk','2017-05-03 08:43:13',0),(48,'e6617a03-ad34-4094-810f-625d0ff58bd2','nestel205','a@a.sk','2017-05-03 08:44:31',0),(49,'68051d59-afca-47ce-ac69-2b3e55f216a0','nestel205','a@a.sk','2017-05-03 08:45:35',0),(50,'e7012378-db6f-4854-9e54-ebc8d74ddba9','nestel205','a@a.sk','2017-05-03 08:59:48',0),(51,'063486fe-23e8-4d0e-a7e9-9c892e0ee20b','nestel205','a@a.sk','2017-05-03 09:02:30',0),(52,'fd3af3ee-9c78-40ae-abf7-670c9704bc86','nestel205','a@a.sk','2017-05-03 09:04:04',0),(53,'666173e3-909c-49dd-9b0c-833ed428d1bb','nestel205','a@a.sk','2017-05-03 09:07:27',0),(54,'7eec2c03-1603-4e5a-a4e4-34ff906c4397','nestel205','a@a.sk','2017-05-03 09:10:59',0),(55,'356fc677-967b-4bdc-b573-a0f658e1b7e1','nestel205','a@a.sk','2017-05-03 09:13:19',0),(56,'f4ba0376-b1be-4141-8435-3b2efa74e61e','nestel200','a@a.sk','2017-05-07 15:50:36',0),(57,'75a6ebd6-3591-4bbd-a062-1898e7227651','nestel200','a@a.sk','2017-05-07 15:57:04',0),(58,'d4e1cc1b-1e50-463f-af6c-c898cfd910fc','nestel200','a@a.sk','2017-05-07 15:59:14',0),(59,'76971634-5a79-4e49-b268-a3701c73e3e6','nestel200','a@a.sk','2017-05-07 16:01:28',0),(60,'595e5df7-2d4d-4bd3-9f90-1f9d78df8556','nestel200','a@a.sk','2017-05-07 16:06:31',0),(61,'6859be20-af75-4dd6-ad2b-951b8d53c8ab','nestel200','a@a.sk','2017-05-07 16:09:01',0),(62,'dc2b94e8-a8eb-42d3-88e8-e94490bb7a4f','nestel200','a@a.sk','2017-05-07 16:16:46',0),(63,'2c86edce-a060-481f-bf5c-b5efc17223e9','nestel200','a@a.sk','2017-05-07 16:17:10',0),(64,'813a6d85-fee7-43c0-8c06-6a93f5932b34','test11','a@a.sk','2017-05-07 16:18:31',0),(65,'d8f4dda4-766e-44b0-98b4-c4bb41b78f70','test11','a@a.sk','2017-05-07 16:19:05',0),(66,'825cbf81-86d6-40dc-8844-2e1254e9d364','test11','a@a.sk','2017-05-07 16:19:25',0),(67,'a951bc45-45b1-4b11-b049-e0a20e9a6919','test11','a@a.sk','2017-05-07 16:19:46',0),(68,'c48703d8-d50a-40df-9ff0-494e26be473d','test11','a@a.sk','2017-05-07 16:20:03',0),(69,'9f32aa05-a678-4370-9771-136bca841647','test11','a@a.sk','2017-05-07 16:32:24',0),(70,'afcd09cd-b73b-4c1a-a3e9-9601e86c96e9','test11','a@a.sk','2017-05-07 16:32:25',0),(71,'bdfd1b32-9bb3-46c0-9524-7f32b6e54da9','test11','a@a.sk','2017-05-07 16:32:51',0),(72,'e5fb1037-5b46-46a6-9a04-310eff3b7038','test11','a@a.sk','2017-05-07 16:39:08',0),(73,'cdbf9b38-5ac0-4db6-8f1b-a9c56ebbee1c','test11','a@a.sk','2017-05-07 16:40:55',0),(74,'843a59fe-4f7f-4da7-82ff-8fc6bb354b7e','nestel205','a@a.sk','2017-05-08 14:50:13',0),(75,'6ab0effa-90a8-480d-9112-cb358532da83','nestel205','a@a.sk','2017-05-08 14:53:01',0),(76,'7ac298da-1dff-4eae-a8b1-c347863c2c98','nestel205','a@a.sk','2017-05-08 14:54:55',0),(77,'6b328d51-167f-4fae-bf7c-271152948aef','nestel205','a@a.sk','2017-05-08 15:00:36',0),(78,'131b36c1-9e1c-4546-9bf3-991d7074399d','nestel205','a@a.sk','2017-05-08 15:03:26',0),(79,'bea58743-c455-4af0-bd40-7e607566a971','nestel205','a@a.sk','2017-05-08 15:06:32',0),(80,'a6495da7-1282-4d3e-87de-c2442b6a6fb0','nestel205','a@a.sk','2017-05-08 15:06:49',0),(81,'e5105b59-9a12-42ed-a0e6-b787c551111d','test11','a@a.sk','2017-05-08 15:16:33',0),(82,'7df73957-1aa0-4b6b-883f-27592d44183c','nestel205','a@a.sk','2017-05-08 15:19:10',0),(83,'55b16c0b-750e-4e25-91f2-791702c2bb1f','nestel205','a@a.sk','2017-05-08 15:19:56',0),(84,'12d9e738-7236-4dc6-8da8-ae301c9b8e95','nestel205','a@a.sk','2017-05-13 16:43:08',0),(85,'393d5ac2-cb59-409b-bc19-69dabb0fd269','nestel200','a@a.sk','2017-05-13 18:28:55',0),(86,'0bc4a808-9d78-40c6-98d6-a29648413fe8','nestel300','a@a.sk','2017-05-17 04:40:08',0),(87,'ce7fbffa-4fc9-4398-b4ac-2b41601f9eee','nestel300','a@a.sk','2017-05-17 04:40:54',0),(88,'873c8fd5-fa6b-423e-83cd-0c5f2decc379','nestel300','a@a.sk','2017-05-17 04:46:29',0),(89,'420380bb-15dc-4ba7-b6cc-2fd83e422b4e','srandista','a@a.sk','2017-05-17 15:03:52',0),(90,'630f70a6-56a7-4298-a4a2-11de38556093','srandista','a@a.sk','2017-05-17 15:04:37',0),(91,'8450bd40-87ee-4c48-af5b-4fe1151b06a6','nestel300','a@a.sk','2017-05-17 15:07:06',0),(92,'dc9ae4d4-c59f-436c-a60c-941ca13a9fb1','srandista','a@a.sk','2017-05-17 15:09:31',0),(93,'692997b7-92bf-4581-88fc-94c848b01107','srandista2','jahic.jakub@gmail.com','2017-05-17 15:38:12',0),(94,'c36c6ab1-d545-4bb3-851d-acc0245097f9','srandista2','jahic.jakub@gmail.com','2017-05-17 15:38:35',0),(95,'157bb469-3c9e-44d0-a265-495eb6895b3e','srandista2','jahic.jakub@gmail.com','2017-05-17 15:39:18',0),(96,'1bf62031-f01b-444a-bc9e-510e586e1bff','srandista2','jahic.jakub@gmail.com','2017-05-17 15:40:41',0),(97,'72981f36-805f-4462-bc3a-e67a6f030779','srandista2','jahic.jakub@gmail.com','2017-05-17 15:43:58',0),(98,'026b6860-2135-48bc-b311-e65ce08def08','srandista2','jahic.jakub@gmail.com','2017-05-17 15:44:31',0),(99,'372e3a69-624b-4c1a-9262-5fa71b09a863','srandista2','jahic.jakub@gmail.com','2017-05-17 15:47:06',0),(100,'c2f0d907-1211-4228-babd-b51ca8a4884b','srandista2','jahic.jakub@gmail.com','2017-05-17 15:47:31',0),(101,'a32a73f9-1789-435f-a56a-7f1633d48ae3','nestel301','a@a.sk','2017-05-17 15:59:16',0),(102,'ac5740a6-13a8-4599-a1ac-0814cce9fd18','srandista2','jahic.jakub@gmail.com','2017-05-17 16:00:14',0),(103,'65853c14-c6d0-4022-b4b5-130e9a5b282c','nestel301','a@a.sk','2017-05-21 11:27:52',0),(104,'de883d83-e9cb-4899-aba5-ec7388e4c0f6','nestel301','a@a.sk','2017-05-21 15:04:00',0),(105,'d698896f-5f9c-4186-a564-15508d13fcaa','srandista2','jahic.jakub@gmail.com','2017-05-24 07:39:47',0),(106,'edc453b8-f512-4db3-ba6a-0985f993231d','nestel301','a@a.sk','2017-05-24 07:40:39',0),(107,'138b0a7e-d143-4d06-885e-21379124ae06','nestel304','john.bool.bool@gmail.com','2017-05-24 07:48:38',0),(108,'f297378d-f149-4fef-88af-1414eb45973b','nestel304','john.bool.bool@gmail.com','2017-05-24 07:49:03',0),(109,'9bd666f5-d51c-4eb2-bfb0-443332253fc5','srandista4','jahic.jakub@gmail.com','2017-05-24 08:08:31',0),(110,'1f90960a-27e2-43ad-b6be-414f9042b26b','nestel304','john.bool.bool@gmail.com','2017-05-24 09:15:02',0),(111,'9921502b-d03b-4902-b1a7-41a889c3153b','nestel304','john.bool.bool@gmail.com','2017-05-24 09:17:00',0),(112,'b0eac3cb-9114-4a5d-b3b2-d828693b78d4','nestel304','john.bool.bool@gmail.com','2017-05-24 09:21:40',0),(113,'e6196995-2504-4ced-8547-bacce1804a1c','matko','a@a.sk','2017-05-24 09:22:14',0),(114,'3f889997-f538-4fc8-83ad-f214febaa225','nestel304','john.bool.bool@gmail.com','2017-05-24 09:23:11',0),(115,'7f65728e-cba2-4a01-835a-f9dd8fd040f0','nestel304','john.bool.bool@gmail.com','2017-05-24 09:24:03',0),(116,'72b642f8-99df-4227-9067-8cec3a79a605','matko','a@a.sk','2017-05-24 09:26:38',0),(117,'306efd47-a78e-4e2c-a7ba-7ebf540d0a73','nestel304','john.bool.bool@gmail.com','2017-05-24 09:31:53',1),(118,'8c98576f-4200-4def-a5b1-820279ceb285','srandista5','jahic.jakub@gmail.com','2017-05-24 09:35:28',0),(119,'7c9de7a5-0817-46d7-b0b8-b8bcb831d378','srandista5','jahic.jakub@gmail.com','2017-05-24 09:35:54',0),(120,'18cb925d-f309-49e0-b7e2-5ef1f5ca204b','nestel304','john.bool.bool@gmail.com','2017-05-24 09:36:35',0),(121,'4752f0ae-d959-420c-aaf5-7b17bf15a8b1','nestel304','john.bool.bool@gmail.com','2017-05-24 09:39:40',0),(122,'b3989b3c-a370-4075-b5da-bae4adc40271','srandista5','jahic.jakub@gmail.com','2017-05-24 09:42:45',0),(123,'bcfba5f4-1cd2-40dc-aab9-ed36b76e3a58','nestel304','john.bool.bool@gmail.com','2017-05-24 09:50:23',0),(124,'45a5a46e-c594-4cbf-8e3e-73516927d05e','srandista5','jahic.jakub@gmail.com','2017-05-24 09:50:26',0),(125,'ebad6a99-289a-48ce-9e24-f7f73536739f','nestel304','john.bool.bool@gmail.com','2017-05-24 09:50:44',0),(126,'b11a1a1e-bf98-4213-9bc1-8fd39350bbd1','nestel304','john.bool.bool@gmail.com','2017-05-24 09:51:17',0),(127,'df6be5e6-ea65-46f6-ba00-9f285ffb3a25','nestel304','john.bool.bool@gmail.com','2017-05-24 09:51:25',0),(128,'0a70f775-1b8c-4c08-afa3-004b024c4951','nestel304','john.bool.bool@gmail.com','2017-05-24 09:51:48',0),(129,'40e4d89d-6ea6-424e-b05f-eecef032ac23','srandista5','jahic.jakub@gmail.com','2017-05-24 09:51:48',1),(130,'c5e0ceda-23a8-4e04-8e5d-f37ce9f44dd4','nestel304','john.bool.bool@gmail.com','2017-05-24 09:53:10',0),(131,'335940a1-02ad-44b7-83f5-5de4e48de467','nestel304','john.bool.bool@gmail.com','2017-05-24 09:53:29',0),(132,'1a174976-a65b-431c-b41a-bcc84e9d2214','srandista5','jahic.jakub@gmail.com','2017-05-24 09:55:21',1),(133,'62d72f70-6428-4167-9442-a4a7113fb7a9','nestel304','john.bool.bool@gmail.com','2017-05-24 09:56:34',0),(134,'159532ca-1592-45f6-a6b2-998edf0dac25','srandista5','jahic.jakub@gmail.com','2017-05-24 10:00:01',1),(135,'9857d9ab-f46a-42ba-a939-00fb2207ae9c','nestel304','john.bool.bool@gmail.com','2017-05-24 10:01:29',0),(136,'009b61d3-1e02-4f01-8de4-bb87a168d046','nestel304','john.bool.bool@gmail.com','2017-05-24 10:03:13',1),(137,'a649cc98-5e4e-4a1b-b5dd-00a6058f231d','nestel304','john.bool.bool@gmail.com','2017-05-24 10:04:59',0),(138,'a04a15c4-37aa-4499-9b8e-89341069545e','nestel304','john.bool.bool@gmail.com','2017-05-24 10:14:10',1),(139,'724ee9d9-d576-402f-8877-cc0cd9cb04c4','srandista5','jahic.jakub@gmail.com','2017-05-24 10:14:30',0),(140,'05e8c444-3470-4ae8-8d8d-da7fa3fc2a8c','nestel304','john.bool.bool@gmail.com','2017-05-24 10:14:31',1),(141,'7fbddb3e-8c4e-4f53-8f17-0f4bf64c4058','nestel304','john.bool.bool@gmail.com','2017-05-24 10:14:43',0),(142,'5bafb575-656a-46d2-a93c-7e24afedba7c','srandista5','jahic.jakub@gmail.com','2017-05-24 10:15:10',1),(143,'58899e20-3969-46d4-8320-6f15b3b01061','nestel304','john.bool.bool@gmail.com','2017-05-25 12:54:41',1),(144,'450c30a6-4b56-47db-b93b-0924286d3548','srandista5','jahic.jakub@gmail.com','2017-05-25 13:44:22',0),(145,'341994c4-d286-43bb-954f-b16d9eedef19','srandista5','jahic.jakub@gmail.com','2017-05-25 13:44:52',1),(146,'ae06e34d-1430-4a4c-a587-1b8264e19f2b','srandista5','jahic.jakub@gmail.com','2017-05-25 13:45:08',0),(147,'68bca664-e1cf-40c1-ad48-d0a6da7dae0d','srandista5','jahic.jakub@gmail.com','2017-05-25 13:45:43',0),(148,'e2dc7e66-17d0-4b90-ad31-097b1489dcb2','srandista5','jahic.jakub@gmail.com','2017-05-25 13:45:43',1),(149,'ca620f7b-7e0f-4e05-979f-18eaca8fc350','nestel304','john.bool.bool@gmail.com','2017-05-26 14:57:45',0),(150,'bae385b2-79bc-47e2-aecf-6335f6b203a8','nestel304','john.bool.bool@gmail.com','2017-05-26 14:57:45',1),(151,'e9ffd662-dfff-4252-94a4-8067c4b71b3b','nestel304','john.bool.bool@gmail.com','2017-05-26 14:58:10',0),(152,'aa8649ef-f060-4f9e-9280-69b1101eaa37','nestel304','john.bool.bool@gmail.com','2017-05-26 14:58:12',0),(153,'5397565e-30f9-435a-9930-4c56ee1f3027','nestel304','john.bool.bool@gmail.com','2017-05-27 10:50:29',0),(154,'8b8901bd-29db-4796-b53d-8cf9683513c0','srandista5','jahic.jakub@gmail.com','2017-05-27 10:52:58',0),(155,'97025767-d85a-4bcb-aeaf-4af8decd3bff','srandista5','jahic.jakub@gmail.com','2017-05-27 11:44:06',1),(156,'46cdc948-7af0-4287-bf40-b2989d7a2c7f','nestel305','john.bool.bool@gmail.com','2017-05-28 07:39:33',1),(157,'5469dc90-3736-45b0-a5cc-f9e89dce96a0','nestel305','john.bool.bool@gmail.com','2017-05-28 07:39:54',0),(158,'dfdced57-cfb9-4668-83d9-faf3e7d02a1e','nestel306','a@a.sk','2017-05-28 08:10:14',1),(159,'fb9fdf36-ca2e-47ae-9a87-404140dfce87','srandista5','jahic.jakub@gmail.com','2017-05-28 08:16:01',0),(160,'f85e9424-e4b5-4a14-a45a-495596200ff3','srandista10','jahic.jakub@gmail.com','2017-05-28 09:40:36',1),(161,'7816d550-2047-45e6-aa46-def54f3b418c','srandista10','jahic.jakub@gmail.com','2017-05-28 09:47:18',0),(162,'10fdc1e7-26b4-45d6-a064-c525275b434d','srandista11','jahic.jakub@gmail.com','2017-05-30 14:50:10',1),(163,'def6ee92-64e9-4244-99e1-4222b9d5a109','srandista11','jahic.jakub@gmail.com','2017-05-30 14:50:29',1),(164,'92886fce-a9e7-4826-b323-c7b81dda3b65','srandista11','jahic.jakub@gmail.com','2017-05-30 14:50:58',0),(165,'15b82ac3-e27d-42e8-a9d9-4d7978c5a75b','srandista11','jahic.jakub@gmail.com','2017-05-30 14:51:26',0),(166,'b5727941-b675-44db-9816-5e5a2e60bd0e','nestel304','john.bool.bool@gmail.com','2017-05-30 19:08:21',0),(167,'a326169f-c42b-461f-a1d1-bf0073d4b916','nestel304','john.bool.bool@gmail.com','2017-05-30 19:08:39',0),(168,'a5d0b3b6-bef2-405b-b6a2-a815eafa6c2e','nestel304','john.bool.bool@gmail.com','2017-05-30 19:09:01',1),(169,'d30ffd20-cbc9-41a0-8029-4be8ee5f5c73','nestel304','john.bool.bool@gmail.com','2017-06-01 11:54:57',1),(170,'2a9f26e6-f04b-4476-9481-7f00ad64c3d4','nestel304','john.bool.bool@gmail.com','2017-06-01 11:55:08',0),(171,'f1cdbaea-e410-4f73-873d-cca6953f00a6','nestel304','john.bool.bool@gmail.com','2017-06-02 08:25:06',1),(172,'a3d3e32b-ff67-4fa6-bfda-1adff6a8c307','nestel304','john.bool.bool@gmail.com','2017-06-04 13:50:10',1),(173,'b0733e17-91b2-4853-a59e-30affe82d09f','srandista11','jahic.jakub@gmail.com','2017-06-05 08:58:52',1),(174,'da9da7b7-b160-4792-95b9-0c7498b9f206','nestel304','john.bool.bool@gmail.com','2017-06-05 14:43:45',0),(175,'a22e1497-541f-4b6d-92b2-ffeccbfd4f75','nestel304','john.bool.bool@gmail.com','2017-06-05 14:43:49',1),(176,'bd5e2f89-9b37-481e-b566-67d00f71b85a','gk100','a@a.sk','2017-09-24 15:58:22',1),(177,'30b83eea-4187-4c95-aa05-128bef0b9ed1','Adam','a@a.sk','2017-09-25 17:48:57',1),(178,'8d45d032-0f6c-4862-8143-7aa66ae1dfda','gk105','a@a.sk','2017-10-05 07:50:38',0),(179,'4c904f70-5681-429b-8aa3-e8bb7faa5f73','gk105','a@a.sk','2017-10-05 07:55:23',1),(180,'f5c66c6d-57f7-4d99-b1a8-8e08028c02b0','lukas','lukas.orlicky@gmail.com','2017-10-09 17:14:18',1),(181,'8e79a0e4-fb40-4eb4-bcb7-72dd6f576e0a','Adam','a@a.sk','2017-10-09 17:14:20',1),(182,'b0e042a5-3a6e-4be0-a29f-37579240c719','timinigi','timinigi@gmail.com','2017-10-17 14:35:09',1),(183,'d9ce03bd-098c-4c51-8589-a22dd0a67be0','timinigi','timinigi@gmail.com','2017-10-17 14:35:11',1),(184,'f97cccfa-a47e-4723-af81-a9adf3016ca4','timinigi','timinigi@gmail.com','2017-10-17 14:36:31',1),(185,'59bb8c8e-5311-4366-97a0-314352eac89a','timinigi','timinigi@gmail.com','2017-10-17 14:37:59',0),(186,'b3db8914-a4b9-43d0-9e36-1dbfe8c029a7','Amphoru','jakub.lehotsky@gmail.com','2017-10-17 21:09:17',0),(187,'2f4b5afd-fa0d-4ea8-a54f-9bc1534cdf04','Amphoru','jakub.lehotsky@gmail.com','2017-10-17 21:09:24',0),(188,'715783b6-848c-4aa4-afab-f51b0b301f5d','Amphoru','jakub.lehotsky@gmail.com','2017-10-17 21:09:27',0),(189,'4a47d74b-1076-41fc-bca5-7a294362de66','Amphoru','jakub.lehotsky@gmail.com','2017-10-17 21:09:29',0),(190,'b857b613-1be1-40f0-bd20-a609f4ae08b3','Amphoru','jakub.lehotsky@gmail.com','2017-10-17 21:09:30',0),(191,'5f3dc97f-ebd4-4857-928f-6bf85639a6e3','Amphoru','jakub.lehotsky@gmail.com','2017-10-17 21:09:55',0),(192,'5a615b08-4840-4325-9262-08cc84b6e9aa','Amphoru','jakub.lehotsky@gmail.com','2017-10-17 21:09:55',0),(193,'ff253f29-3bd2-477f-bc2e-0398cdcd4bed','Amphoru','jakub.lehotsky@gmail.com','2017-10-17 21:09:55',0),(194,'746a51cb-13e2-4f23-8dcd-8cba0132c11b','gk105','a@a.sk','2017-10-18 08:45:40',1),(195,'27fec3fb-78d4-4f59-9fea-78a20bf975e0','gk105','a@a.sk','2017-10-19 15:24:26',1),(196,'6eb52f86-ea60-42c1-a404-7d5ca9c0ba99','gk105','a@a.sk','2017-10-19 15:26:19',0),(197,'0696a0b9-7182-4eef-896d-b6f5e55b0181','gk105','a@a.sk','2017-10-19 15:27:19',0);
+/*!40000 ALTER TABLE `orders` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `orders_products`
+--
+
+DROP TABLE IF EXISTS `orders_products`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `orders_products` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id_order` int(11) NOT NULL,
+  `id_product` int(11) NOT NULL,
+  `amount` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=249 DEFAULT CHARSET=utf8 COLLATE=utf8_slovak_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `orders_products`
+--
+
+LOCK TABLES `orders_products` WRITE;
+/*!40000 ALTER TABLE `orders_products` DISABLE KEYS */;
+INSERT INTO `orders_products` VALUES (72,39,1,4),(73,40,1,3),(74,40,3,1),(75,41,1,3),(76,41,3,1),(77,42,1,3),(78,42,3,1),(79,43,1,1),(80,44,1,1),(81,45,1,1),(82,46,4,1),(83,47,1,1),(84,48,1,1),(85,49,1,1),(86,50,1,1),(87,51,3,1),(88,52,3,1),(89,53,3,1),(90,54,3,1),(91,55,1,1),(92,56,1,1),(93,57,1,1),(94,58,1,1),(95,59,1,1),(96,60,1,1),(97,61,1,1),(98,62,3,1),(99,63,3,1),(100,64,1,1),(101,65,1,1),(102,66,3,1),(103,67,3,1),(104,67,4,1),(105,68,5,1),(106,69,1,1),(107,70,1,1),(108,71,3,1),(109,72,2,1),(110,73,2,1),(111,74,1,1),(112,75,3,1),(113,76,4,1),(114,77,2,1),(115,78,2,1),(116,79,5,1),(117,80,5,1),(118,81,1,1),(119,82,3,1),(120,83,2,1),(121,84,2,1),(122,85,3,1),(123,86,1,1),(124,87,1,1),(125,88,1,1),(126,89,1,1),(127,90,1,1),(128,91,1,1),(129,92,3,1),(130,93,1,1),(131,94,3,1),(132,95,2,1),(133,96,1,1),(134,97,1,1),(135,98,2,1),(136,99,3,1),(137,100,1,1),(138,101,3,1),(139,102,1,1),(140,103,1,1),(141,104,2,1),(142,105,1,1),(143,106,4,1),(144,107,3,1),(145,108,3,1),(146,109,3,1),(147,110,2,1),(148,111,1,1),(149,112,1,1),(150,113,1,1),(151,114,2,1),(152,115,1,1),(153,116,1,1),(154,117,2,1),(155,118,1,1),(156,119,1,1),(157,120,3,1),(158,121,3,1),(159,122,1,1),(160,123,2,1),(161,124,3,1),(162,125,3,1),(163,126,2,1),(164,127,1,1),(165,128,3,1),(166,129,1,1),(167,130,1,1),(168,131,1,1),(169,132,2,1),(170,133,1,1),(171,133,1,1),(172,134,1,1),(173,135,3,1),(174,136,1,1),(175,137,3,1),(176,138,6,1),(177,139,9,1),(178,140,8,1),(179,140,1,1),(180,141,11,1),(181,142,7,1),(182,143,6,1),(183,144,9,1),(184,145,6,1),(185,146,9,1),(186,147,8,1),(187,147,7,1),(188,148,8,1),(189,148,7,1),(190,149,4,1),(191,150,4,1),(192,151,9,1),(193,152,9,1),(194,153,9,1),(195,154,6,1),(196,155,1,1),(197,156,8,1),(198,157,9,1),(199,158,7,1),(200,159,9,1),(201,160,7,1),(202,160,8,1),(203,161,9,1),(204,162,6,1),(205,163,7,1),(206,164,9,1),(207,165,8,1),(208,166,7,1),(209,166,8,1),(210,167,7,1),(211,168,7,1),(212,169,6,1),(213,170,11,1),(214,171,7,1),(215,172,2,1),(216,173,1,1),(217,174,9,1),(218,174,6,1),(219,175,6,1),(220,176,4,1),(221,176,3,1),(222,177,6,1),(223,178,1,1),(224,178,2,1),(225,179,2,1),(226,179,1,1),(227,180,5,1),(228,180,4,1),(229,181,6,1),(230,182,2,1),(231,183,2,1),(232,184,3,1),(233,184,4,1),(234,185,1,1),(235,186,6,1),(236,187,6,1),(237,187,7,1),(238,188,6,1),(239,188,7,1),(240,189,7,1),(241,190,7,1),(242,191,6,1),(243,192,6,1),(244,193,6,1),(245,194,10,1),(246,195,7,1),(247,196,7,1),(248,197,7,1);
+/*!40000 ALTER TABLE `orders_products` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `products`
+--
+
+DROP TABLE IF EXISTS `products`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `products` (
+  `id_product` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(45) COLLATE utf8_slovak_ci NOT NULL,
+  `id_shop` int(11) NOT NULL,
+  `product_id` int(11) DEFAULT NULL,
+  `price` double NOT NULL,
+  `amount` int(11) NOT NULL DEFAULT '0',
+  `is_active` int(1) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id_product`)
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8 COLLATE=utf8_slovak_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `products`
+--
+
+LOCK TABLES `products` WRITE;
+/*!40000 ALTER TABLE `products` DISABLE KEYS */;
+INSERT INTO `products` VALUES (1,'ceresne',3,1,3.2,32,1),(2,'pomaran?e',3,2,1.7,39,1),(3,'jablká',3,3,0.8,29,1),(4,'mango',3,4,2.6,35,1),(5,'jahody',3,5,1.02,33,1),(6,'Kofola',1,1,1.09,35,1),(7,'Sprite',1,2,12,33,1),(8,'Mirinda',1,3,1,54,1),(9,'Škoda_Rapid',2,1,12550,31,1),(10,'Škoda_Citygo_3D',2,2,7955,38,1),(11,'Škoda_Octavia',2,3,14890,47,1);
+/*!40000 ALTER TABLE `products` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `shops_ibans`
+--
+
+DROP TABLE IF EXISTS `shops_ibans`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `shops_ibans` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id_shop` int(11) NOT NULL,
+  `iban` varchar(34) COLLATE utf8_slovak_ci NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `id_shop_idx` (`id_shop`),
+  CONSTRAINT `id_shop` FOREIGN KEY (`id_shop`) REFERENCES `merchants` (`id_shop`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_slovak_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `shops_ibans`
+--
+
+LOCK TABLES `shops_ibans` WRITE;
+/*!40000 ALTER TABLE `shops_ibans` DISABLE KEYS */;
+INSERT INTO `shops_ibans` VALUES (1,1,'SK2409000000001234567892'),(2,2,'SK2409000000001234567892'),(3,3,'SK2409000000001234567892');
+/*!40000 ALTER TABLE `shops_ibans` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2017-10-22  9:13:33
