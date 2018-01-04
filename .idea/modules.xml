@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/SmartWallet.ProcessNode.iml" filepath="$PROJECT_DIR$/SmartWallet.ProcessNode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MobileWallet.ProcessNode.iml" filepath="$PROJECT_DIR$/MobileWallet.ProcessNode.iml" />
     </modules>
   </component>
 </project>

@@ -1,2 +1,2 @@
-# SmartWallet.ProcessNode
-SmartWallet MQTT ProcessNode repository
+# MobileWallet.ProcessNode
+MobileWallet MQTT ProcessNode repository
