@@ -1,12 +1,11 @@
 <component name="ArtifactManager">
-  <artifact type="jar" name="MobileWallet.ProcessNode.jar">
+  <artifact build-on-make="true" name="MobileWallet.ProcessNode:jar">
     <output-path>$PROJECT_DIR$/out/artifacts/MobileWallet_ProcessNode_jar</output-path>
-    <root id="archive" name="MobileWallet.ProcessNode.jar">
-      <element id="module-output" name="MobileWallet.ProcessNode" />
-      <element id="extracted-dir" path="$PROJECT_DIR$/javax.json-1.0.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$PROJECT_DIR$/dist/lib/mysql-connector-java-5.1.40-bin.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$PROJECT_DIR$/dist/lib/org.eclipse.paho.client.mqttv3-1.1.0.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$PROJECT_DIR$/dist/lib/javax.json-1.0.jar" path-in-jar="/" />
+    <root id="root">
+      <element id="archive" name="MobileWallet.ProcessNode.jar">
+        <element id="module-output" name="MobileWallet.ProcessNode" />
+      </element>
+      <element id="library" level="project" name="lib" />
     </root>
   </artifact>
 </component>

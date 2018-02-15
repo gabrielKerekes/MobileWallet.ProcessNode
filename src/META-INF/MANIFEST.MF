@@ -1,3 +1,5 @@
 Manifest-Version: 1.0
+Class-Path: javax.json-1.0.jar mysql-connector-java-5.1.40-bin.jar org
+ .eclipse.paho.client.mqttv3-1.1.0.jar javax.json-1.0.jar
 Main-Class: com.mobilewallet.processnode.Main
 
