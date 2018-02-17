@@ -7,12 +7,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6813be66-8546-4a78-940e-a540b8a7eba3" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/MobileWallet_ProcessNode_jar.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PNnodeLogFile.log.lck" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/manifest.mf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/mobilewallet/processnode/IMqttNode.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/mobilewallet/processnode/Main.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/mobilewallet/processnode/Order.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/mobilewallet/processnode/PNode.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/mobilewallet/processnode/Product.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/mobilewallet/processnode/Worker.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/mobilewallet/processnode/message/MQTTMessage.java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/MobileWallet_ProcessNode_jar/MobileWallet.ProcessNode.jar" afterPath="$PROJECT_DIR$/out/artifacts/MobileWallet_ProcessNode_jar/MobileWallet.ProcessNode.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MobileWallet.ProcessNode.iml" afterPath="$PROJECT_DIR$/MobileWallet.ProcessNode.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mqttStartAll.sh" afterPath="$PROJECT_DIR$/mqttStartAll.sh" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MobileWallet.ProcessNode/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/out/production/MobileWallet.ProcessNode/META-INF/MANIFEST.MF" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -25,95 +31,58 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PNode.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/mobilewallet/processnode/PNode.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="58" column="29" lean-forward="false" selection-start-line="58" selection-start-column="29" selection-end-line="58" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Product.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/mobilewallet/processnode/Product.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Order.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/mobilewallet/processnode/Order.java">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Worker.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/mobilewallet/processnode/Worker.java">
+      <file leaf-file-name="MANIFEST.MF" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="34" column="13" lean-forward="false" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
-              <folding>
-                <marker date="1515088741693" expanded="true" signature="2663:2714" ph="SELECT * FRO... merchants" />
-                <marker date="1515088741693" expanded="true" signature="2945:3017" ph="UPDATE merch... " />
-                <marker date="1515088741693" expanded="true" signature="3911:3985" ph="SELECT id_sh... merchants" />
-                <marker date="1515088741693" expanded="true" signature="4905:4977" ph="SELECT id_pr... products" />
-                <marker date="1515088741693" expanded="true" signature="5207:5646" ph="INSERT INTO products... " />
-                <marker date="1515088741693" expanded="true" signature="5729:6250" ph="UPDATE produ... " />
-                <marker date="1515088741693" expanded="true" signature="7007:7051" ph="SELECT name merchants" />
-                <marker date="1515088741693" expanded="true" signature="8223:8306" ph="SELECT * FRO... products" />
-                <marker date="1515088741693" expanded="true" signature="11441:11527" ph="Select id_or... orders" />
-                <marker date="1515088741693" expanded="true" signature="11775:12050" ph="INSERT INTO orders_products... " />
-                <marker date="1515088741693" expanded="true" signature="12195:12244" ph="SELECT produ... products" />
-                <marker date="1515088741693" expanded="true" signature="13742:13989" ph="SELECT m.nam... merchants" />
-                <marker date="1515088741693" expanded="true" signature="16714:16978" ph="SELECT CONCA... orders_products" />
-                <marker date="1515088741693" expanded="true" signature="17355:17727" ph="SELECT SUM(t... orders_products" />
-                <marker date="1515088741693" expanded="true" signature="21690:21769" ph="UPDATE order... " />
-                <marker date="1515088741693" expanded="true" signature="23649:23857" ph="SELECT m.nam... products" />
-                <marker date="1515088741693" expanded="true" signature="25881:26494" ph="SELECT m.nam... " />
-              </folding>
+            <state relative-caret-position="85">
+              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HttpsCertificateUtils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mobilewallet/processnode/HttpsCertificateUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="356">
+              <caret line="80" column="58" lean-forward="false" selection-start-line="80" selection-start-column="55" selection-end-line="80" selection-end-column="58" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/mobilewallet/processnode/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mobilewallet/processnode/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="32" column="32" lean-forward="false" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
+            <state relative-caret-position="357">
+              <caret line="53" column="49" lean-forward="false" selection-start-line="53" selection-start-column="49" selection-end-line="53" selection-end-column="49" />
               <folding>
-                <element signature="e#2807#3191#0" expanded="true" />
-                <element signature="e#3190#3191#0" expanded="true" />
-                <marker date="1518676356221" expanded="true" signature="1774:1806" ph="update merch... " />
-                <marker date="1518676356221" expanded="true" signature="1860:1891" ph="update produ... " />
+                <marker date="1518867541600" expanded="true" signature="1774:1806" ph="update merch... " />
+                <marker date="1518867541600" expanded="true" signature="1860:1891" ph="update produ... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MQTTMessage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/mobilewallet/processnode/message/MQTTMessage.java">
+      <file leaf-file-name="SSLContext.class" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_112/jre/lib/rt.jar!/javax/net/ssl/SSLContext.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="13" column="22" lean-forward="false" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IMqttNode.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/mobilewallet/processnode/IMqttNode.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-              <folding />
+            <state relative-caret-position="200">
+              <caret line="75" column="34" lean-forward="false" selection-start-line="75" selection-start-column="34" selection-end-line="75" selection-end-column="34" />
+              <folding>
+                <element signature="e#2653#2654#0" expanded="true" />
+                <element signature="e#2716#2717#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -149,7 +118,10 @@
         <option value="$PROJECT_DIR$/src/com/smartwallet/processnode/Worker.java" />
         <option value="$PROJECT_DIR$/src/com/mobilewallet/processnode/PNode.java" />
         <option value="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
+        <option value="$PROJECT_DIR$/src/com/mobilewallet/processnode/HttpsCertificateUtils.java" />
         <option value="$PROJECT_DIR$/src/com/mobilewallet/processnode/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mobilewallet/processnode/HttpsCertificateUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mobilewallet/processnode/Main.java" />
       </list>
     </option>
   </component>
@@ -160,10 +132,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-4" />
-    <option name="y" value="15" />
-    <option name="width" value="1026" />
-    <option name="height" value="554" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1066" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -182,7 +154,7 @@
     <panes>
       <pane id="Scratches" />
       <pane id="PackagesPane" />
-      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -217,14 +189,7 @@
               <item name="MobileWallet.ProcessNode" type="b2602c69:ProjectViewProjectNode" />
               <item name="MobileWallet.ProcessNode" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="processnode" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MobileWallet.ProcessNode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MobileWallet.ProcessNode" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="processnode" type="462c0819:PsiDirectoryNode" />
-              <item name="message" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MobileWallet.ProcessNode" type="b2602c69:ProjectViewProjectNode" />
@@ -234,17 +199,22 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\GabrielK\skola\dp\appky\MobileWallet.ProcessNode\src\main\java" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -384,15 +354,15 @@
       <workItem from="1518625725559" duration="1401000" />
       <workItem from="1518673420936" duration="464000" />
       <workItem from="1518676175525" duration="172000" />
+      <workItem from="1518865308784" duration="3381000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5336000" />
+    <option name="totallyTimeSpent" value="8717000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -402,19 +372,20 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32795697" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32795697" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18072917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18072917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -434,51 +405,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/mobilewallet/processnode/message/MQTTMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="13" column="22" lean-forward="false" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mobilewallet/processnode/IMqttNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mobilewallet/processnode/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="51" lean-forward="true" selection-start-line="34" selection-start-column="51" selection-end-line="34" selection-end-column="51" />
-          <folding>
-            <element signature="e#2807#3191#0" expanded="true" />
-            <element signature="e#3190#3191#0" expanded="true" />
-            <marker date="1518676356221" expanded="true" signature="1774:1806" ph="update merch... " />
-            <marker date="1518676356221" expanded="true" signature="1860:1891" ph="update produ... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mobilewallet/processnode/PNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="58" column="29" lean-forward="false" selection-start-line="58" selection-start-column="29" selection-end-line="58" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mobilewallet/processnode/Product.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/mobilewallet/processnode/Order.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -491,25 +417,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
           <caret line="34" column="13" lean-forward="false" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
-          <folding>
-            <marker date="1515088741693" expanded="true" signature="2663:2714" ph="SELECT * FRO... merchants" />
-            <marker date="1515088741693" expanded="true" signature="2945:3017" ph="UPDATE merch... " />
-            <marker date="1515088741693" expanded="true" signature="3911:3985" ph="SELECT id_sh... merchants" />
-            <marker date="1515088741693" expanded="true" signature="4905:4977" ph="SELECT id_pr... products" />
-            <marker date="1515088741693" expanded="true" signature="5207:5646" ph="INSERT INTO products... " />
-            <marker date="1515088741693" expanded="true" signature="5729:6250" ph="UPDATE produ... " />
-            <marker date="1515088741693" expanded="true" signature="7007:7051" ph="SELECT name merchants" />
-            <marker date="1515088741693" expanded="true" signature="8223:8306" ph="SELECT * FRO... products" />
-            <marker date="1515088741693" expanded="true" signature="11441:11527" ph="Select id_or... orders" />
-            <marker date="1515088741693" expanded="true" signature="11775:12050" ph="INSERT INTO orders_products... " />
-            <marker date="1515088741693" expanded="true" signature="12195:12244" ph="SELECT produ... products" />
-            <marker date="1515088741693" expanded="true" signature="13742:13989" ph="SELECT m.nam... merchants" />
-            <marker date="1515088741693" expanded="true" signature="16714:16978" ph="SELECT CONCA... orders_products" />
-            <marker date="1515088741693" expanded="true" signature="17355:17727" ph="SELECT SUM(t... orders_products" />
-            <marker date="1515088741693" expanded="true" signature="21690:21769" ph="UPDATE order... " />
-            <marker date="1515088741693" expanded="true" signature="23649:23857" ph="SELECT m.nam... products" />
-            <marker date="1515088741693" expanded="true" signature="25881:26494" ph="SELECT m.nam... " />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -533,12 +441,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" column="2" lean-forward="true" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
-          <folding>
-            <element signature="e#2807#3191#0" expanded="true" />
-            <element signature="e#3190#3191#0" expanded="true" />
-            <marker date="1518676356221" expanded="true" signature="1774:1806" ph="update merch... " />
-            <marker date="1518676356221" expanded="true" signature="1860:1891" ph="update produ... " />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -570,25 +473,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
           <caret line="34" column="13" lean-forward="false" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
-          <folding>
-            <marker date="1515088741693" expanded="true" signature="2663:2714" ph="SELECT * FRO... merchants" />
-            <marker date="1515088741693" expanded="true" signature="2945:3017" ph="UPDATE merch... " />
-            <marker date="1515088741693" expanded="true" signature="3911:3985" ph="SELECT id_sh... merchants" />
-            <marker date="1515088741693" expanded="true" signature="4905:4977" ph="SELECT id_pr... products" />
-            <marker date="1515088741693" expanded="true" signature="5207:5646" ph="INSERT INTO products... " />
-            <marker date="1515088741693" expanded="true" signature="5729:6250" ph="UPDATE produ... " />
-            <marker date="1515088741693" expanded="true" signature="7007:7051" ph="SELECT name merchants" />
-            <marker date="1515088741693" expanded="true" signature="8223:8306" ph="SELECT * FRO... products" />
-            <marker date="1515088741693" expanded="true" signature="11441:11527" ph="Select id_or... orders" />
-            <marker date="1515088741693" expanded="true" signature="11775:12050" ph="INSERT INTO orders_products... " />
-            <marker date="1515088741693" expanded="true" signature="12195:12244" ph="SELECT produ... products" />
-            <marker date="1515088741693" expanded="true" signature="13742:13989" ph="SELECT m.nam... merchants" />
-            <marker date="1515088741693" expanded="true" signature="16714:16978" ph="SELECT CONCA... orders_products" />
-            <marker date="1515088741693" expanded="true" signature="17355:17727" ph="SELECT SUM(t... orders_products" />
-            <marker date="1515088741693" expanded="true" signature="21690:21769" ph="UPDATE order... " />
-            <marker date="1515088741693" expanded="true" signature="23649:23857" ph="SELECT m.nam... products" />
-            <marker date="1515088741693" expanded="true" signature="25881:26494" ph="SELECT m.nam... " />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -596,12 +481,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="918">
           <caret line="54" column="47" lean-forward="false" selection-start-line="54" selection-start-column="47" selection-end-line="54" selection-end-column="47" />
-          <folding>
-            <element signature="e#2807#3191#0" expanded="true" />
-            <element signature="e#3190#3191#0" expanded="true" />
-            <marker date="1518676356221" expanded="true" signature="1774:1806" ph="update merch... " />
-            <marker date="1518676356221" expanded="true" signature="1860:1891" ph="update produ... " />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -633,25 +513,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
           <caret line="34" column="13" lean-forward="false" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
-          <folding>
-            <marker date="1515088741693" expanded="true" signature="2663:2714" ph="SELECT * FRO... merchants" />
-            <marker date="1515088741693" expanded="true" signature="2945:3017" ph="UPDATE merch... " />
-            <marker date="1515088741693" expanded="true" signature="3911:3985" ph="SELECT id_sh... merchants" />
-            <marker date="1515088741693" expanded="true" signature="4905:4977" ph="SELECT id_pr... products" />
-            <marker date="1515088741693" expanded="true" signature="5207:5646" ph="INSERT INTO products... " />
-            <marker date="1515088741693" expanded="true" signature="5729:6250" ph="UPDATE produ... " />
-            <marker date="1515088741693" expanded="true" signature="7007:7051" ph="SELECT name merchants" />
-            <marker date="1515088741693" expanded="true" signature="8223:8306" ph="SELECT * FRO... products" />
-            <marker date="1515088741693" expanded="true" signature="11441:11527" ph="Select id_or... orders" />
-            <marker date="1515088741693" expanded="true" signature="11775:12050" ph="INSERT INTO orders_products... " />
-            <marker date="1515088741693" expanded="true" signature="12195:12244" ph="SELECT produ... products" />
-            <marker date="1515088741693" expanded="true" signature="13742:13989" ph="SELECT m.nam... merchants" />
-            <marker date="1515088741693" expanded="true" signature="16714:16978" ph="SELECT CONCA... orders_products" />
-            <marker date="1515088741693" expanded="true" signature="17355:17727" ph="SELECT SUM(t... orders_products" />
-            <marker date="1515088741693" expanded="true" signature="21690:21769" ph="UPDATE order... " />
-            <marker date="1515088741693" expanded="true" signature="23649:23857" ph="SELECT m.nam... products" />
-            <marker date="1515088741693" expanded="true" signature="25881:26494" ph="SELECT m.nam... " />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -659,12 +521,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
           <caret line="51" column="21" lean-forward="false" selection-start-line="51" selection-start-column="21" selection-end-line="51" selection-end-column="21" />
-          <folding>
-            <element signature="e#2807#3191#0" expanded="true" />
-            <element signature="e#3190#3191#0" expanded="true" />
-            <marker date="1518676356221" expanded="true" signature="1774:1806" ph="update merch... " />
-            <marker date="1518676356221" expanded="true" signature="1860:1891" ph="update produ... " />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -705,10 +562,10 @@
     <entry file="file://$PROJECT_DIR$/src/com/smartwallet/processnode/PNode.java" />
     <entry file="file://$PROJECT_DIR$/src/com/smartwallet/processnode/Product.java" />
     <entry file="file://$PROJECT_DIR$/src/com/smartwallet/processnode/Worker.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/mobilewallet/processnode/Order.java">
+    <entry file="file://$PROJECT_DIR$/src/com/mobilewallet/processnode/PNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        <state relative-caret-position="0">
+          <caret line="58" column="29" lean-forward="false" selection-start-line="58" selection-start-column="29" selection-end-line="58" selection-end-column="29" />
           <folding />
         </state>
       </provider>
@@ -721,40 +578,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mobilewallet/processnode/PNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="58" column="29" lean-forward="false" selection-start-line="58" selection-start-column="29" selection-end-line="58" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mobilewallet/processnode/Worker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="34" column="13" lean-forward="false" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
-          <folding>
-            <marker date="1515088741693" expanded="true" signature="2663:2714" ph="SELECT * FRO... merchants" />
-            <marker date="1515088741693" expanded="true" signature="2945:3017" ph="UPDATE merch... " />
-            <marker date="1515088741693" expanded="true" signature="3911:3985" ph="SELECT id_sh... merchants" />
-            <marker date="1515088741693" expanded="true" signature="4905:4977" ph="SELECT id_pr... products" />
-            <marker date="1515088741693" expanded="true" signature="5207:5646" ph="INSERT INTO products... " />
-            <marker date="1515088741693" expanded="true" signature="5729:6250" ph="UPDATE produ... " />
-            <marker date="1515088741693" expanded="true" signature="7007:7051" ph="SELECT name merchants" />
-            <marker date="1515088741693" expanded="true" signature="8223:8306" ph="SELECT * FRO... products" />
-            <marker date="1515088741693" expanded="true" signature="11441:11527" ph="Select id_or... orders" />
-            <marker date="1515088741693" expanded="true" signature="11775:12050" ph="INSERT INTO orders_products... " />
-            <marker date="1515088741693" expanded="true" signature="12195:12244" ph="SELECT produ... products" />
-            <marker date="1515088741693" expanded="true" signature="13742:13989" ph="SELECT m.nam... merchants" />
-            <marker date="1515088741693" expanded="true" signature="16714:16978" ph="SELECT CONCA... orders_products" />
-            <marker date="1515088741693" expanded="true" signature="17355:17727" ph="SELECT SUM(t... orders_products" />
-            <marker date="1515088741693" expanded="true" signature="21690:21769" ph="UPDATE order... " />
-            <marker date="1515088741693" expanded="true" signature="23649:23857" ph="SELECT m.nam... products" />
-            <marker date="1515088741693" expanded="true" signature="25881:26494" ph="SELECT m.nam... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/mobilewallet/processnode/message/MQTTMessage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -771,22 +594,80 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/META-INF/MANIFEST.MF">
+    <entry file="file://$PROJECT_DIR$/src/com/mobilewallet/processnode/Worker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        <state relative-caret-position="-340">
+          <caret line="34" column="13" lean-forward="false" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mobilewallet/processnode/HttpsCertificateUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="33" column="31" lean-forward="false" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/mobilewallet/processnode/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="32" column="32" lean-forward="false" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
+        <state relative-caret-position="170">
+          <caret line="24" column="4" lean-forward="true" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mobilewallet/processnode/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_112/jre/lib/rt.jar!/javax/net/ssl/SSLContext.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="75" column="34" lean-forward="false" selection-start-line="75" selection-start-column="34" selection-end-line="75" selection-end-column="34" />
           <folding>
-            <element signature="e#2807#3191#0" expanded="true" />
-            <element signature="e#3190#3191#0" expanded="true" />
-            <marker date="1518676356221" expanded="true" signature="1774:1806" ph="update merch... " />
-            <marker date="1518676356221" expanded="true" signature="1860:1891" ph="update produ... " />
+            <element signature="e#2653#2654#0" expanded="true" />
+            <element signature="e#2716#2717#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobilewallet/processnode/HttpsCertificateUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="80" column="58" lean-forward="false" selection-start-line="80" selection-start-column="55" selection-end-line="80" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobilewallet/processnode/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="53" column="49" lean-forward="false" selection-start-line="53" selection-start-column="49" selection-end-line="53" selection-end-column="49" />
+          <folding>
+            <marker date="1518867541600" expanded="true" signature="1774:1806" ph="update merch... " />
+            <marker date="1518867541600" expanded="true" signature="1860:1891" ph="update produ... " />
           </folding>
         </state>
       </provider>
@@ -798,9 +679,9 @@
         <settings>
           <artifact-editor>
             <show-content>
-              <type id="artifact" />
-              <type id="jpa-descriptors" />
               <type id="javaee-facet-resources" />
+              <type id="jpa-descriptors" />
+              <type id="artifact" />
               <type id="library" />
             </show-content>
           </artifact-editor>
