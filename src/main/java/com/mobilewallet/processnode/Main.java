@@ -62,7 +62,7 @@ public class Main {
                 }
             }
             connOpts.setServerURIs(serversURIs);
-            connOpts.setSocketFactory(HttpsCertificateUtils.getSslContextWithTrustedCertificate().getSocketFactory());
+            connOpts.setSocketFactory(HttpsCertificateUtils.getSslContextWithTrustedCertificate());
             
             PNode pnode = new PNode(connOpts);
             pnode.connectToBroker();
